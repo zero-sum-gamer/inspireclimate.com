@@ -16,6 +16,9 @@ module:
   hugo_version:
     min: "0.147.8"
 
+  imports:
+  - path: github.com/writeonlycode/hugo-up-business
+
   mounts:
     - source: 'hugo_stats.json'
       target: 'assets/notwatching/hugo_stats.json'
