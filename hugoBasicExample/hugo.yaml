@@ -17,7 +17,7 @@ module:
     min: "0.147.8"
 
   imports:
-  - path: github.com/writeonlycode/hugo-up-business
+    - path: github.com/writeonlycode/hugo-up-business
 
   mounts:
     - source: 'hugo_stats.json'
