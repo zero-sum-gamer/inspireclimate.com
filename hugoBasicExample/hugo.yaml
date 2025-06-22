@@ -1,4 +1,4 @@
-theme: "hugo-up-business"
+theme: "github.com/writeonlycode/hugo-up-business"
 languageCode: "en-us"
 
 build:
