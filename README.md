@@ -12,10 +12,14 @@ See [here](https://hugo-up-business.netlify.app/).
 ## Quick Start
 
 If you are creating a new website, the quickest way to get up and running is to
-clone the theme into your themes folder:
+clone the theme  and use the basic example as an starting point:
 
 ```bash
-git clone https://github.com/writeonlycode/hugo-up-business.git themes/hugo-up-business
+git clone --depth 1 https://github.com/writeonlycode/hugo-up-business.git
+cp -rf hugo-up-business/hugoBasicExample/ my-new-site/
+cd my-new-site/
+npm install
+hugo server
 ```
 
 The folder `hugoBasicExample` contains a working version of a website with the
