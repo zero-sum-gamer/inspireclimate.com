@@ -47,7 +47,7 @@
           {{ range .Site.Params.location }}
             <li class="flex flex-col items-center gap-4 xl:flex-row">
               <span class="text-primary">{{ partial "icons/geo-alt.html" }}</span>
-              <span class="">{{ . }}</span>
+              <span class="text-center xl:text-start">{{ . }}</span>
             </li>
           {{ end }}
         </ul>

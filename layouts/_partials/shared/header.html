@@ -15,10 +15,10 @@
 
     </button>
     <div
-      class="fixed inset-0 flex -translate-y-full flex-col items-center justify-center gap-8 bg-white duration-500 xl:static xl:translate-y-0 xl:flex-row"
+      class="fixed inset-0 flex -translate-y-full flex-col items-center justify-center gap-8 bg-white duration-500 xl:relative xl:translate-y-0 xl:flex-row"
       id="navbarContent"
     >
-      <div class="container absolute top-0 mx-auto flex items-center justify-between px-4 py-6">
+      <div class="container absolute top-0 mx-auto flex items-center justify-between px-4 py-6 xl:hidden">
         <a class="flex items-center xl:hidden" href="{{ .Site.BaseURL }}">
           {{ partial "utilities/image.html" (dict "src" "images/logo.png" "class" "size-6 xl:size-8") }}
           <span class="text-primary text-xl font-semibold uppercase xl:text-3xl">{{ .Site.Title }}</span>

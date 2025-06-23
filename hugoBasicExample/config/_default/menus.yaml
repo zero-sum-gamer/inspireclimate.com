@@ -23,7 +23,6 @@ buttons:
   - name: "Book a call"
     url: "/#"
     weight: 5
-    pre: "btn btn-primary text-light"
 
 footer:
   - name: "Home"
