@@ -1,18 +1,16 @@
-<section class="section brands py-5">
-  <div class="container">
-    <div class="row">
-      {{ with .content.title }}
-        <div class="col-12">
-          <h3 class="fs-5 fw-semibold text-primary text-center pb-4">{{ . }}</h3>
-        </div>
-      {{ end }}
-    </div>
-    <div class="row align-items-center justify-content-center">
-      {{ range .content.items }}
-      <div class="col px-3 my-2 text-center">
-        {{ partial "utilities/image-third.html" . }}
+<section id="brands" class="py-8 xl:py-16">
+  <div class="container mx-auto px-4">
+    {{ with .title }}
+      <h1 class="text-primary mb-16 text-center text-2xl font-semibold">{{ . }}</h1>
+    {{ end }}
+    {{ if .items }}
+      <div class="flex flex-col flex-wrap items-center justify-around gap-8 xl:flex-row">
+        {{ range .items }}
+          <div class="">
+            {{ partial "utilities/image.html" (dict "src" . "class" "w-auto h-8") }}
+          </div>
+        {{ end }}
       </div>
-      {{ end }}
-    </div>
+    {{ end }}
   </div>
 </section>

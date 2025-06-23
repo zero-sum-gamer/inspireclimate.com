@@ -1,8 +1,8 @@
 {{ define "main" }}
   {{ with .Site.Data.home.hero }}{{ if .enable }}{{ partial "blocks/home/hero.html" . }}{{ end }}{{ end }}
-  <!--{{ with .Site.Data.home.brands }}{{ partial "blocks/home/brands.html" . }}{{ end }}-->
-  <!--{{ with .Site.Data.home.portfolio }}{{ partial "blocks/home/portfolio.html" . }}{{ end }}-->
-  <!--{{ with .Site.Data.home.services }}{{ partial "blocks/home/services.html" . }}{{ end }}-->
+  {{ with .Site.Data.home.brands }}{{ if .enable }}{{ partial "blocks/home/brands.html" . }}{{ end }}{{ end }}
+  {{ with .Site.Data.home.portfolio }}{{ if .enable }}{{ partial "blocks/home/portfolio.html" . }}{{ end }}{{ end }}
+  {{ with .Site.Data.home.services }}{{ if .enable }}{{ partial "blocks/home/services.html" . }}{{ end }}{{ end }}
   <!--{{ with .Site.Data.home.testimonials }}{{ partial "blocks/home/testimonials.html" . }}{{ end }}-->
   <!--{{ with .Site.Data.home.cta }}{{ partial "blocks/home/cta.html" . }}{{ end }}-->
 {{ end }}
