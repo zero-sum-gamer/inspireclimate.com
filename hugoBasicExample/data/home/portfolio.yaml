@@ -1,7 +1,6 @@
-enabled: true
-id: "portfolio"
+enable: true
 
-content:
+items:
   - image: "images/portfolio-ecommerce.png"
     pretitle: "Portfolio Service"
     title: "We developed an eCommerce website"
@@ -9,22 +8,10 @@ content:
 
     buttons: 
       - label: "See live"
-        url: "#"
+        link: "#"
 
       - label: "Read more"
-        url: "#"
-
-  - image: "images/portfolio-ecommerce.png"
-    pretitle: "Portfolio Service"
-    title: "We developed an eCommerce website"
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
-
-    buttons: 
-      - label: "See live"
-        url: "#"
-
-      - label: "Read more"
-        url: "#"
+        link: "#"
 
   - image: "images/portfolio-ecommerce.png"
     pretitle: "Portfolio Service"
@@ -33,7 +20,19 @@ content:
 
     buttons: 
       - label: "See live"
-        url: "#"
+        link: "#"
 
       - label: "Read more"
-        url: "#"
+        link: "#"
+
+  - image: "images/portfolio-ecommerce.png"
+    pretitle: "Portfolio Service"
+    title: "We developed an eCommerce website"
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
+
+    buttons: 
+      - label: "See live"
+        link: "#"
+
+      - label: "Read more"
+        link: "#"
