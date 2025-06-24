@@ -14,9 +14,9 @@
 }
 
 @theme {
-  --color-primary: #7c76bb;
-  --color-secondary: #ff87b0;
-  --color-tertiary: #dcf0ff;
+  --color-primary: {{ (default "#5d57a3	" site.Params.colors.primary) }};
+  --color-secondary: {{ (default "#d33a77	" site.Params.colors.secondary) }};
+  --color-tertiary: {{ (default "#dcf0ff" site.Params.colors.tertiary) }};
 }
 
 body {
