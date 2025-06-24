@@ -3,7 +3,7 @@
   "baseUrl": ".",
   "paths": {
    "*": [
-    "../../../../.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/writeonlycode/hugo-up-business@v0.0.0-20250624105058-66c0dc8bb171/assets/*"
+    "../../hugo-up-business/assets/*"
    ]
   }
  }
