@@ -1,0 +1,30 @@
+name: Build Hugo site
+
+on:
+  push:
+    branches: [demo]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install NPM dependencies
+        run: npm install
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.147.8'
+          extended: true
+
+      - name: Build Hugo site
+        run: hugo --minify
