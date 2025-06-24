@@ -1,7 +1,7 @@
-import typography from '@tailwindcss/typography'
-
-module.exports = {
-  content: ['./hugo_stats.json'],
-  plugins: [typography],
-  darkMode: 'class',
-}
+//import typography from '@tailwindcss/typography'
+//
+//module.exports = {
+//  content: ['./hugo_stats.json'],
+//  plugins: [typography],
+//  darkMode: 'class',
+//}

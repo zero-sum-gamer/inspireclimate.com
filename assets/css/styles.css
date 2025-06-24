@@ -1,6 +1,8 @@
 @import 'tailwindcss';
+@plugin "@tailwindcss/typography";
 
 @import './shared/fonts.css';
+@import './shared/pagination.css';
 
 @import './home/hero.css';
 

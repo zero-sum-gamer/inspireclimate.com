@@ -1,4 +1,4 @@
-theme: "hugo-up-business"
+theme: "github.com/writeonlycode/hugo-up-business"
 languageCode: "en-us"
 
 build:
@@ -16,8 +16,8 @@ module:
   hugo_version:
     min: "0.147.8"
 
-  # imports:
-  #   - path: github.com/writeonlycode/hugo-up-business
+  imports:
+    - path: github.com/writeonlycode/hugo-up-business
 
   mounts:
     - source: 'hugo_stats.json'
