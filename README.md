@@ -10,8 +10,6 @@
 
 ## Getting Started
 
-Follow these instructions to get a copy of the project running on your local machine for development and testing.
-
 ### Prerequisites
 
 Before you begin, make sure you have the following installed:
