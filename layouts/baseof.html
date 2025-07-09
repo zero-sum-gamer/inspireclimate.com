@@ -34,7 +34,7 @@
 
     <!-- Favicons from https://favicon.io/ -->
     {{ with resources.Get "favicon.ico" }}
-      {{ .Publish }}
+      <link rel="icon" type="image/x-icon" href="{{ .Permalink }}" />
     {{ end }}
 
     {{ with resources.Get "apple-touch-icon.png" }}
