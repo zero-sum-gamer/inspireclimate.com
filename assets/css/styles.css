@@ -1,10 +1,9 @@
 @import 'tailwindcss';
 @plugin "@tailwindcss/typography";
 
-@import './shared/fonts.css';
-@import './shared/pagination.css';
+@import './shared/_pagination.css';
 
-@import './home/hero.css';
+@import './home/_hero.css';
 
 @layer base {
   html {
