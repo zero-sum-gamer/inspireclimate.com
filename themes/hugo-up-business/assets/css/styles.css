@@ -18,8 +18,8 @@
   --french-gray: #b6b5c8ff;
   --lavender-blush: #e7dadaff;
   --linen: #fff5ebff;
-  --color-primary: {{ (default "var(--dark-purple)	" site.Params.colors.primary) }};
-  --color-secondary: {{ (default "var(--french-gray)	" site.Params.colors.secondary) }};
+  --color-primary: {{ (default "var(--dark-purple-2)	" site.Params.colors.primary) }};
+  --color-secondary: {{ (default "var(--lavender-blush)	" site.Params.colors.secondary) }};
   --color-tertiary: {{ (default "var(--linen)" site.Params.colors.tertiary) }};
 }
 
