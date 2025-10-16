@@ -15,7 +15,7 @@
               {{ with .title }}<h2 class="text-primary mb-4 text-center text-2xl">{{ . }}</h2>{{ end }}
               {{ with .text }}<p class="mb-8 text-center">{{ . }}</p>{{ end }}
               {{ with .button }}
-                {{ partial "components/button/outline" (dict "label" .label "href" .link) }}
+                {{ partial "components/button/arrow" (dict "label" .label "href" .link) }}
               {{ end }}
             </div>
           </div>
