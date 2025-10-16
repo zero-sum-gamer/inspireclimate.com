@@ -1,16 +1,14 @@
 {{ define "main" }}
-  <section class="py-16">
-    <div class="container mx-auto px-4">
+  <section class="prose prose-inspire prose-lg mx-auto">
+    <div class="container mx-auto px-8">
       {{ with .Title }}
-        <h2 class="text-primary mb-16 text-center text-6xl font-bold">{{ . }}</h2>
+        <h1>{{ . }}</h1>
       {{ end }}
       {{ with .Params.description }}
-        <p class="mx-auto mb-16 text-center xl:max-w-[50%]">{{ . }}</p>
+        <h2>{{ . }}</h2>
       {{ end }}
       {{ with .Content }}
-        <div class="prose prose-lg mx-auto">
-          {{ . }}
-        </div>
+        <div>{{ . }}</div>
       {{ end }}
     </div>
   </section>
