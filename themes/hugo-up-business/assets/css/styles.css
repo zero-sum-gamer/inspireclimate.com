@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import 'tailwindcss';
 @plugin "@tailwindcss/typography";
 
@@ -14,7 +15,9 @@
   --color-background: var(--linen);
   --color-primary: {{ (default "var(--dark-purple-2) " site.Params.colors.primary) }};
   --color-secondary: {{ (default "var(--dark-purple) " site.Params.colors.secondary) }};
-  --color-tertiary: {{ (default "var(--lavender-blush)" site.Params.colors.tertiary) }}; 
+  --color-tertiary: {{ (default "var(--lavender-blush)" site.Params.colors.tertiary) }};
+  --font-heading: "Prata", serif;
+  --font-body: "Raleway", sans-serif;
 }
 
 @utility prose-inspire {
@@ -55,19 +58,31 @@
 
 
 @layer base {
-  html {
-    font-family: 'Inter', system-ui, sans-serif;
-    @apply text-primary bg-background;
+  body {
+    /* font-family: 'Inter', system-ui, sans-serif; */
+    @apply text-primary bg-background font-body;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
   }
 }
 
 @layer components {
+  .navbar-content {
+    @apply fixed inset-0 flex -translate-y-full flex-col items-center justify-center gap-8 duration-500 xl:relative xl:translate-y-0 xl:flex-row;
+  }
+
   .btn-primary {
     @apply bg-primary hover:bg-secondary rounded px-8 py-2 duration-500 text-background;
   }
 
   .btn-arrow {
-    @apply border-primary text-primary hover:bg-tertiary flex items-center gap-2 rounded border px-8 py-2 duration-500;
+    @apply border border-primary text-primary hover:bg-tertiary flex items-center gap-2 rounded px-8 py-2 duration-500;
+  }
+
+  .card {
+    @apply border border-tertiary shadow-lg rounded-4xl px-6 py-12 xl:px-12 xl:py-16
   }
 }
 

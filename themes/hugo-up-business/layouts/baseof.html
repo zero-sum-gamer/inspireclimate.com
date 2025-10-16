@@ -86,14 +86,14 @@
 
 
     <!-- Load Fonts -->
-    {{ with resources.Get "css/fonts.css" }}
+    <!-- {{ with resources.Get "css/fonts.css" }}
       {{ with resources.ExecuteAsTemplate "css/fonts.css" $ . }}
         {{ $opts := dict "inlineImports" true "optimize" true "minify" true }}
         {{ with . | css.TailwindCSS $opts | fingerprint }}
           <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous" />
         {{ end }}
       {{ end }}
-    {{ end }}
+    {{ end }} -->
 
 
     <!-- Load JS -->
